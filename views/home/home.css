@@ -5,3 +5,22 @@
 #nav-menu {
     font-size: 18px;
 }
+
+/* FIRST EXAMPLE */
+.hidden-up-to-s {
+    display: none;
+}
+@media (min-width: 640px) { /* @breakpoint-small */
+    .hidden-up-to-s {
+        display: block;
+    }
+}
+
+/* SECOND EXAMPLE (animation) */
+.navbar-collapse2 {
+    @media (min-width: 640px) {
+        &[hidden] {
+            display: block !important; /* hack: always show navbar in desktop view */
+        }
+    }
+}
