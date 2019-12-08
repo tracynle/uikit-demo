@@ -54,20 +54,34 @@
                     </ul>
                 </div>
             </nav>
-             <!-- Background Image-->
-             <div>
-                <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="../../../images/home5.jpg" uk-img></div>
-            </div> 
         </div> 
         <!-- Body -->
         <div class="uk-section uk-section-muted">
             <div class="uk-container">
-                <h1 class="uk-heading-line uk-text-center"><span>Modern Home 1</span></h1>                
+                <h1 class="uk-heading-line uk-text-center"><span>Midcentury Home</span></h1>                
                 <div class="uk-grid-match uk-child-width" uk-grid>
                     <div class="uk-text-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
                 </div>
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img data-src="../../../images/home2.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
+                            </li>
+                            <li>
+                                <img data-src="../../../images/home2room.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !* +*">
+                            </li>
+                            <li>
+                                <img data-src="../../../images/home2room2.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
+                            </li>
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    
+                    </div>
             </div>
         </div>
         <!-- Featured Homes -->
